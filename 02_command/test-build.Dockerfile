@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ENV IMAGE_NAME="test image"
+ENV IMAGE_NAME="image"
 
 RUN apt-get update && apt-get install -y nginx
 
