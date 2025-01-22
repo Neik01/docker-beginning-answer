@@ -8,4 +8,5 @@
 3. Tạo dockerfile cho java - maven và javascript - npm
 4. Khi chạy nhiều câu lệnh RUN, thường sử dụng kểt hợp với && để giảm bớt số layer được tạo ra, tăng hiệu suẩt build. Ngoài ra, các câu lệnh sau && chỉ có thể được thực thi nếu như các câu lệnh trước đó được thực thi thành công
 5. Build Context là tập hợp các file và folder được dùng cho lệnh docker build 
-6. Tác dụng của .dockerignore: Loại bỏ những thành phần không cần thiết khi build image, giúp giảm dung lượng của build context, giảm dung lượng cache và tăng tính bảo mật khi có thể loại bỏ những file chứa thông tin quan trọng
+6. Tác dụng của .dockerignore: 
+Loại bỏ những thành phần không cần thiết khi build image, giúp giảm dung lượng của build context, giảm dung lượng cache và tăng tính bảo mật khi có thể loại bỏ những file chứa thông tin quan trọng

@@ -14,9 +14,10 @@
 
 3. 
 Câu lệnh để chạy mysql với thư mục data (/var/lib/mysql) được mount vào **volume**: 
-docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=root -v /path/to/data:/var/lib/mysql mysql:latest
+docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=root -v mysql_data:/var/lib/mysql mysql:latest
 
 4. 
 Sử dụng bind mount để đưa src vào container
-Ứng dụng NodeJS
-docker run -v ./path:/usr/src/app imageName
+Ứng dụng NodeJS Express
+Bind mount tới /usr/src/app tại vì thư mục làm việc đang đặt là /usr/src/app
+docker run -v .:/usr/src/app -p 3000:3000 node-app 
